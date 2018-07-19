@@ -13,6 +13,8 @@ header{
 header a{
 	text-decoration:none;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }	
 
 nav ul{
@@ -21,6 +23,9 @@ nav ul{
 	display:inline-block;
 	padding: 0em;
 	margin:0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 	
 h1{
@@ -80,10 +85,10 @@ nav a:active{
 .footer{
 	background-color: #161D34;
 	margin: 2em;
-
 }
 
 footer a{
+	padding-top: 200 px;
 	text-align: left;
 	margin-left: 276px;
 	margin-top: 2em;
@@ -105,7 +110,8 @@ footer a{
 	background-image: url("mpics/mp1.png");
     background-attachment: fixed;
 	background-position: 0px 0px;
-	background-repeat: x, -y;}
+	background-repeat: x, -y;
+}
     
 .homeLayer{
 	position: relative;
@@ -115,24 +121,19 @@ footer a{
 }
   
 .homeLayer p{
-	position: relative;
-	left: 305 px;
+	box-sizing: content-box;
+	position: absolute;
+	margin-left: 305 px;
 	top: 719 px;
 }
 
-.homeLayer p{    
-    text-align: left;
-    width: 100%;
+.bodyOrange p{  
+	padding: 50px 500px;  
+  	text-align: left;
     font-family: 'Markazi Text', serif;
     font-size: 40px;
     text-decoration: none; 
     color: #FDFCD2;
-    }
-   
-.homeLayer dropBox{
-	position: absolute;
-  	top: 967 px;
-  	left: 0px;
 }
 
 .dropBox{
@@ -142,25 +143,35 @@ footer a{
   	opacity: 0.5;
   	filter: alpha(opacity=50);
   	position: absolute;
-}    
+  	margin-top: 2000 px;
+}  
 
-.homeLayer topP{
-	position: absolute;
-	top: 445 px;
-	left: 254 px;
+.homeLayer img{
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	width: 50%
+	
+	}  
+/* 
+.bodyOrange topP{
+	padding: 445 px 254px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.homeLayer middleP{
+.bodyOrange middleP{
 	position: absolute;
 	top: 1351 px;
 	left: 794 px;
 }
 
-.homeLayer bottomP{
+.bodyOrange bottomP{
 	position: absolute;
 	bottom: 404 px;
 	right: 254 px;
 }
+ */
     
 .bodyBlue{
     background-image: url("mpics/mp2.png");
@@ -170,17 +181,46 @@ footer a{
 }
     
 .bodyBlue p{
+	padding: 300px 500px;
 	color: #FFE9D0;
     text-align: left;
-    width: 90%;
+    width: 100%;
     font-family: 'Markazi Text', serif;
     font-size: 40px;
     text-decoration: none;
 }    
+
+.bodyES{
+	position: relative;
+	width: 1938px;
+	height: 2346px;
+	border: 0;
+}
+  
+.bodyES p{
+	box-sizing: content-box;
+	position: absolute;
+	margin-left: 305 px;
+	top: 719 px;
+}
+
+.dropBoxES{
+	height: 1655px;
+ 	width: 1635px;
+  	background-color: #3F5E67;
+  	opacity: 0.5;
+  	filter: alpha(opacity=50);
+  	position: absolute;
+  	top:500px;
+}   
    
 .bodyBlue img{
 	 margin-left: 450px;
 	 margin-right: 770px;
+	 margin top: 1000px;
+	 display: flex;
+	flex-wrap: wrap;
+	
 }    
 
 .bodyPink{
@@ -189,15 +229,61 @@ footer a{
 	background-position: 0px 0px;
 	background-repeat: x, -y;
 }
-    
+   
 .bodyPink p{
+	padding: 200px 500px;
+	line-height: 1.5;
+    display: inline-block;
+    vertical-align: left;
 	color: #3F5E67;
     text-align: left;
-    width: 90%;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 500 px;
+    width: 100%;
     font-family: 'Markazi Text', serif;
     font-size: 40px;
     text-decoration: none;
-}    
+}  
+
+.bodyH img{
+	margin-left: 2000px;
+	margin-right: 770px;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+  
+.bodyH p{
+	box-sizing: content-box;
+	position: absolute;
+	margin-left: 305 px;
+	top: 400 px;
+} 
+
+.dropBoxH{
+	padding: 500px 500px;
+	height: 200px;
+ 	width: 1245px;
+  	background-color: #FE9CB5;
+  	opacity: 0.5;
+  	filter: alpha(opacity=50);
+  	position: absolute;
+  	margin-top: 403 px;
+  	padding-top: 403 px;
+}
+
+bodyH{
+
+}
+.bodyPink img{
+	width: 375px;
+	height: 540px;
+ 	position: center;
+ 	overflow: hidden;
+ 	padding: 0px 1000 px;
+ 	display: block;
+}  
     
 .bodyYellow{
     background-image: url("mpics/mp4.png");
@@ -209,15 +295,10 @@ footer a{
 
 .photos{
 	margin-left: 287px;
-	margin-right: 287px;
-	
+	margin-right: 287px;	
 }
 
 .photos img{
-    /* 
-opacity: 0.5;
-    filter: alpha(opacity=75);
- */
  	width: 475px;
 	height: 549.47px;
  	position: relative;
@@ -226,6 +307,5 @@ opacity: 0.5;
  	padding-left:35 px;
  	padding-right: 35px;
 	padding-top:23px;
-	padding-bottom: 23px;
-    
+	padding-bottom: 23px; 
 }  
