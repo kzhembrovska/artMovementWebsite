@@ -1,0 +1,145 @@
+/* styles for MEMPHIS homework*/
+
+
+body{
+	
+}
+
+header{
+	background-color: white;
+	padding: 0em;
+	margin: 0;
+}
+
+.nav{
+	text-transform: uppercase;
+	color: black;
+    text-align: center;
+    width: 90%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    margin-top:2em;
+    display:inline;
+    text-decoration: none;
+}
+    
+nav ul{
+	list-style-type: none;
+	text-align: center;
+	display:inline;
+	padding: 0em;
+	list-style-type: none;
+	display: inline-block;
+}
+
+.hlink a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+    text-align: center;
+    padding-top: 1em;
+    width: 100%;
+    font-family: 'Markazi Text', serif;
+    font-size: 12em;
+    }
+
+.rectangle {
+    height: 10.5px;
+ 	width: 600.5px;
+  	background-color: #FF9300;
+  	left: 50%; 
+    margin-left: 30%;
+}
+	
+.footer{
+	background-color: #161D34;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-size: 35px;
+	margin-bottom: 98px;
+	margin-left: 600 px;
+	text-decoration:none;
+	padding: 0em;
+	margin: 0;
+	
+	}
+
+footer a{
+	text-decoration: none;
+}	
+
+.social {
+	width: 2em;
+	margin: 1em;
+	display: inline;
+	
+}				
+
+.row {
+	display: flex;
+	padding: 0 4px;
+}
+
+.photos {
+	margin: 20px 0;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 150 px 150 px;
+	grid-gap:5 px;
+}
+
+.photos > div {
+	background-color: none;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bodyOrange{
+	color: #FDFCD2;
+    text-align: left;
+    width: 120%;
+    font-family: 'Markazi Text', serif;
+    font-size: 40px;
+    text-decoration: none;
+    background-image: url("mpics/mp1.png");
+    background-attachment: fixed;
+	background-position: 0px 0px;
+	background-repeat: round;
+    }
+    
+.bodyBlue{
+	color: #FFE9D0;
+    text-align: left;
+    width: 90%;
+    font-family: 'Markazi Text', serif;
+    font-size: 40px;
+    text-decoration: none;
+    background-image: url("mpics/mp2.png");
+    background-attachment: fixed;
+	background-position: 0px 0px;
+	background-repeat: x, -y;
+		width: 100% vp;
+    }
+    
+.bodyPink{
+	color: #3F5E67;
+    text-align: left;
+    width: 90%;
+    font-family: 'Markazi Text', serif;
+    font-size: 40px;
+    text-decoration: none;
+    background-image: url("mpics/mp3.png");
+    background-attachment: fixed;
+	background-position: 0px 0px;
+	background-repeat: x, -y;
+		width: 100% vp;
+    }
+    
+.bodyYellow{
+    background-image: url("mpics/mp4.png");
+    background-attachment: fixed;
+	background-position: 0px 0px;
+	background-repeat: x, -y;
+	width: 100% vp;
+    }    
+	
